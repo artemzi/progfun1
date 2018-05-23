@@ -27,7 +27,7 @@ object Main {
         else if(acc == -1) -1
         else loop(list.tail, if (list.head == '(') acc + 1 else if (list.head == ')') acc - 1 else acc)
       }
-      if (loop(chars,0) == 0) true else false
+      loop(chars,0) == 0
     }
   
   /**
